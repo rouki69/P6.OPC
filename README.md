@@ -32,8 +32,13 @@ Exemple avec Ubuntu : $ python3 run.py
 
 Depuis le menu, il suffit de selectionner l'option qui vous interesse.
 
-Pour le backup il est possible de récuperer le fichier CSV ou vous aurez au préalable rempli avec les informations concernant les routeurs.
+## Exemples
 
+Pour le backup il est possible de récuperer le fichier CSV ou vous aurez au préalable rempli avec les informations concernant les routeurs.
+![Screenshot](exemple-backup.PNG)
+
+Pour faire un show interface sur le routeur souhaité :
+![Screenshot](exemple-ip.PNG)
 
 
 
