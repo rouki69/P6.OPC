@@ -18,7 +18,7 @@ Il est nécessaire d'avoir un accès SSH sur les routeurs ciblés, ainsi que d'u
 
 Si vous souhaite utiliser un fichier CSV pour l'utiliser dans le script il suffit de suivre les indications dedans.
 
-![alt text]((http://image.noelshack.com/fichiers/2021/06/3/1612938048-csv.png)
+![Screenshot](CSV.png)
 
 
 
