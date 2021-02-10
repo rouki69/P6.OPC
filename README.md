@@ -26,6 +26,7 @@ Dans l'invite de commande il suffit d'executer le "script-python.py"
 
 Exemple avec Ubuntu : $ python3 run.py 
 
+![Screenshot](menu script.PNG)
 
 
 
