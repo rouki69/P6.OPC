@@ -3,4 +3,4 @@
 
 ## __Script Python pour routeur cisco__
 
-J'ai créé ce script
+J'ai créé ce script en python pour pouvoir automatiser certaines tâches avec des routeurs SSH.
