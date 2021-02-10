@@ -12,10 +12,14 @@ J'ai créé ce script en python pour pouvoir automatiser certaines tâches avec 
 Il est nécessaire d'avoir un accès SSH sur les routeurs ciblés, ainsi que d'un utilisateur sur chaque routeur.
 
 ## Installation
-Récuper le script
-
-* chmod +x main.py
 * pip3 install -r requirements.txt
+
+## Configuration
+
+Si vous souhaite utiliser un fichier CSV pour l'utiliser dans le script il suffit de suivre les indications dedans.
+
+![alt text]((http://url/to/img.png)
+
 
 
 
