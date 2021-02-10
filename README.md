@@ -1,5 +1,4 @@
 # Projet 6 pour Openclassroom
-# Script cisco automatisation 
 
 
 # __Script Python pour routeur cisco__
