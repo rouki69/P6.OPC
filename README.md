@@ -28,6 +28,12 @@ Exemple avec Ubuntu : $ python3 run.py
 
 ![Screenshot](images/menu-script.PNG)
 
+## Utilisation
+
+Depuis le menu, il suffit de selectionner l'option qui vous interesse.
+
+Pour le backup il est possible de récuperer le fichier CSV ou vous aurez au préalable rempli avec les informations concernant les routeurs.
+
 
 
 
