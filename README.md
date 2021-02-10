@@ -1,6 +1,6 @@
-# P6.OPC
+# Projet 6 Rémi Sautot pour Openclassroom
 
 
-#__Script Python pour routeur cisco__
+# __Script Python pour routeur cisco__
 
 J'ai créé ce script
