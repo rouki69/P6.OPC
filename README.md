@@ -40,7 +40,7 @@ Si vous choisissez l'option CSV, vous aurez besoin dudit fichier CSV dans le mê
 
 Les test ont étés efféctues sur GNS3 avec plusieurs routeurs et une machine sous Ubuntu 20.04.
 
-![Screenshot](GNS3-P6.PNG)
+![Screenshot](images/GNS3-P6.PNG)
 
 Pour le backup il est possible de récuperer le fichier CSV ou vous aurez au préalable rempli avec les informations concernant les routeurs.
 
