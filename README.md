@@ -6,7 +6,9 @@
 
 ## Description
 
-J'ai créé ce script en python pour pouvoir automatiser certaines tâches avec des routeurs SSH. Le backup des configs peut être activé en saissant les adresses IP manuelement ou directement en important un fichier CSV.
+J'ai créé ce script en python pour pouvoir automatiser certaines tâches avec des routeurs en connexion SSH.
+
+Les configuration Ciscode votre appareil seront enregistrées dans un dossier avec le nom d'hôte, la date et l'heure. Vous avez la possibilité de tout importer à partir d'un fichier CSV ou de lui donner manuellement l'adresse IP, le nom d'utilisateur, le mot de passe secret de chaque hote.
 
 ## Pré-requis
 Il est nécessaire d'avoir un accès SSH sur les routeurs ciblés, ainsi que d'un utilisateur sur chaque routeur.
@@ -31,6 +33,8 @@ Exemple avec Ubuntu : $ python3 run.py
 ## Utilisation
 
 Depuis le menu, il suffit de selectionner l'option qui vous interesse.
+
+Si vous choisissez l'option CSV, vous aurez besoin dudit fichier CSV dans le même répertoire que le script Python. Il copiera la configuration enregistrée dans un dossier nommé Backup-Configs dans le même répertoire du fichier python. Le nom du fichier de configuration sera le nom d'hôte, la date et l'heure du périphérique Cisco.
 
 ## Exemples
 
