@@ -38,7 +38,7 @@ _(Exemple sur Ubuntu20.04)_
 
 ## Configuration
 
-Si vous souhaite utiliser un fichier CSV pour l'utiliser dans le script, il suffit d'ajouter les information du routeur que vous souhaitez joindre, en remplissant chaque colonne (host, username, password,secret password).
+Si vous souhaite utiliser un fichier CSV pour l'utiliser dans le script, il suffit d'ajouter les information du routeur que vous souhaitez joindre, en remplissant chaque colonne (host, username, password,enable password).
 Le dossier pour les back-up sera automatiquement créé là où se situe le script.
 
 Pour le back-up manuel, il vous sera demandé le nombre d'appareils que vous souhaitez séléctionner. Pour les autres options, elles ne seront utilisables que sur un seul routeur à la fois.
@@ -142,7 +142,7 @@ _(Exemple sur Ubuntu20.04)_
 
 ## Configuration
 
-If you want to use a CSV file, to use it the script, you just have to add the information of the router that you want to reach by filling in each column (host, username, password,secret password).
+If you want to use a CSV file, to use it the script, you just have to add the information of the router that you want to reach by filling in each column (host, username, password,enable password).
 The files for the back-ups will be automatically created where the script is. 
 
 For the manual back-ups, the number of devices you want to select will be asked. For the other options, they will only be operable on one router by a time.
