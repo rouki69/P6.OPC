@@ -26,8 +26,10 @@ Voici les possibilités possibles avec ce script:
 Il est nécessaire d'avoir un accès **SSH** sur les routeurs ciblés, ainsi que d'**un utilisateur** sur chaque routeur.
 
 ## Installation
-Il est nécessaire d'avoir pip3 installé pour pouvoir récuperer les informations dans le fichier *requirements.txt*
+Il est nécessaire d'avoir pip3 installé pour pouvoir récuperer les informations dans le fichier **requirements.txt**
+
 _(Exemple sur Ubuntu20.04)_
+
 `sudo apt install python3-pip`
 
 `pip3 install -r requirements.txt`
