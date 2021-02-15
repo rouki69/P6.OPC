@@ -58,21 +58,25 @@ Les test ont étés efféctues avec [GNS3](https://gns3.com/) avec plusieurs rou
 
 
 ## Exemples
-Voici un exemple pour un back-up fait avec les host choisit manuellement :
+
+1.Voici un exemple pour un back-up fait avec les host choisit manuellement :
 
 ![Screenshot](images/backup_manuel.PNG)
 
-Un back-up avec les données des routeurs récupérés directement depuis un fichier CSV:
+2.Un back-up avec les données des routeurs récupérés directement depuis un fichier CSV:
 
-![Screenshot](images/CSV.PNG)
+![Screenshot](images/backup_CSV.PNG)
 
-Modification de la passerelle par défaut:
+3.Modification de la passerelle par défaut:
+
 ![Screenshot](images/Passerelle.PNG)
 
-Ajout d'un utilisateur avec le nom et le mot de passe choisi directement via le script:
+4.Ajout d'un utilisateur avec le nom et le mot de passe choisi directement via le script:
+
 ![Screenshot](images/Ajout_utilisateur.PNG)
 
-Voir la table ARP du routeur séléctionné:
+5.Voir la table ARP du routeur séléctionné:
+
 ![Screenshot](images/arp.PNG)
 
 
