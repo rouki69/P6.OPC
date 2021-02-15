@@ -103,8 +103,6 @@ Voir la table ARP du routeur sélectionné:
 -----------------
 -----------------
 -----------------
------------------
------------------
 
 # __Script Python automation for cisco router__
 # Explanation in English
