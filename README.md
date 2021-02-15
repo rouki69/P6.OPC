@@ -32,6 +32,8 @@ Il est nécessaire d'avoir un accès SSH sur les routeurs ciblés, ainsi que d'u
 Si vous souhaite utiliser un fichier CSV pour l'utiliser dans le script il suffit de suivre les indications dedans.
 Le dossier pour les back-up sera automatiquement créé ou se situe le script.
 
+Pour le back-up manuel il vous sera demandé le nombre d'appareil que vous souhaitez séléctionner pour les autres options elles ne seront utilisable que sur un seul routeur à la fois.
+
 ![Screenshot](images/CSV.PNG)
 
 ## Démarrage
@@ -47,6 +49,7 @@ Exemple avec Ubuntu : $ python3 run.py
 Depuis le menu, il suffit de selectionner l'option qui vous interesse.
 
 Si vous choisissez l'option CSV, vous aurez besoin dudit fichier CSV dans le même répertoire que le script Python. Il copiera la configuration enregistrée dans un dossier nommé Backup-Configs dans le même répertoire du fichier python. Le nom du fichier de configuration sera le nom d'hôte, la date et l'heure du périphérique Cisco.
+
 ## Laboratoire de test
 
 Les test ont étés efféctues avec [GNS3](https://gns3.com/) avec plusieurs routeurs et une machine sous Ubuntu 20.04.
@@ -55,12 +58,22 @@ Les test ont étés efféctues avec [GNS3](https://gns3.com/) avec plusieurs rou
 
 
 ## Exemples
-Pour le backup il est possible de récuperer le fichier CSV ou vous aurez au préalable rempli avec les informations concernant les routeurs.
+Voici un exemple pour un back-up fait avec les host choisit manuellement :
 
-![Screenshot](images/exemple-backup.PNG)
+![Screenshot](images/backup_manuel.PNG)
 
-Pour faire un show interface sur le routeur souhaité :
-![Screenshot](images/exemple-ip.PNG)
+Un back-up avec les données des routeurs récupérés directement depuis un fichier CSV:
+
+![Screenshot](images/CSV.PNG)
+
+Modification de la passerelle par défaut:
+![Screenshot](images/Passerelle.PNG)
+
+Ajout d'un utilisateur avec le nom et le mot de passe choisi directement via le script:
+![Screenshot](images/Ajout_utilisateur.PNG)
+
+Voir la table ARP du routeur séléctionné:
+![Screenshot](images/arp.PNG)
 
 
 
