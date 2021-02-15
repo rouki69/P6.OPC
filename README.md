@@ -9,6 +9,7 @@
 J'ai créé ce script en python pour pouvoir automatiser certaines tâches avec des routeurs en connexion SSH.
 
 Les configuration Ciscode votre appareil seront enregistrées dans un dossier avec le nom d'hôte, la date et l'heure. Vous avez la possibilité de tout importer à partir d'un fichier CSV ou de lui donner manuellement l'adresse IP, le nom d'utilisateur, le mot de passe secret de chaque hote.
+*Possibilité de faire un back-up en tapant directement les informations manuellement ou depuis un fichier CSV.*Test2
 
 ## Pré-requis
 Il est nécessaire d'avoir un accès SSH sur les routeurs ciblés, ainsi que d'un utilisateur sur chaque routeur.
