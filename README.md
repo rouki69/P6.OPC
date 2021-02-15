@@ -1,12 +1,14 @@
-# Projet 6 pour Openclassroom
-
-
 # __Script Python pour routeur cisco__
+_(Openclassroom Projet6)_
+
+![Python 3.8](https://img.shields.io/badge/Python-3.8-blue) ![test](https://img.shields.io/badge/tests-100%25-brightgreen)
+![cisco](https://img.shields.io/badge/cisco-ios-yellowgreen)
+![Netmiko 3.0.0](https://img.shields.io/badge/netmiko-3.0.0-yellow)
 
 
 ## Description
 
-J'ai créé ce script en python pour pouvoir automatiser certaines tâches avec des routeurs en connexion SSH.
+J'ai créé ce script en python pour pouvoir **automatiser certaines tâches avec des routeurs en connexion SSH**.
 
 Les configuration Cisco de votre appareil seront enregistrées dans un dossier avec le nom d'hôte, la date et l'heure. Vous avez la possibilité de tout importer à partir d'un fichier CSV ou de lui donner manuellement l'adresse IP, le nom d'utilisateur, le mot de passe secret de chaque hote. 
 
@@ -21,7 +23,7 @@ Voici les possibilités possibles avec ce script:
 
 
 ## Pré-requis
-Il est nécessaire d'avoir un accès SSH sur les routeurs ciblés, ainsi que d'un utilisateur sur chaque routeur.
+Il est nécessaire d'avoir un accès **SSH** sur les routeurs ciblés, ainsi que d'**un utilisateur** sur chaque routeur.
 
 ## Installation
 `pip3 install -r requirements.txt`
