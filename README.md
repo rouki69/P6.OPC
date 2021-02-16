@@ -97,6 +97,7 @@ Voir la table ARP du routeur sélectionné:
 Si vous avez un problème avec le script vous pouvez déposer un message [ici](https://github.com/rouki69/P6.OPC/issues) si jamais vous avez un soucis d'utilisation avec le script.
 
 ## Contact
+Vous pouvez me contacter à mon mail: **rouki69@gmail.com**
 
 ## Licence
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -204,6 +205,7 @@ Here is the ARP table of the selected router:
 You have a problem with the script, you can drop a message [here](https://github.com/rouki69/P6.OPC/issues) I will try to answer you as quickly as possible
 
 ## Contact
+You can contact me at my mail: **rouki69@gmail.com**
 
 ## Licence
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
