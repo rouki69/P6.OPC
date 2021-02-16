@@ -27,8 +27,8 @@ Voici les possibilités avec ce script:
 Il est nécessaire d'avoir un accès **SSH** sur les routeurs ciblés, ainsi que d'**un utilisateur** sur chaque routeur.
 
 ## Installation
-Il est nécessaire d'avoir pip3 installé et python3 pour pouvoir récuperer les informations dans le fichier **requirements.txt**
-
+Il est nécessaire d'avoir **pip3** installé et **python** pour pouvoir récuperer les informations dans le fichier **requirements.txt**
+Si vous utiliser une version de **python supérieur à 3.6** il faut utiliser la version de **netmiko==2.4.2**
 _(Exemple sur Ubuntu20.04)_
 
 `sudo apt install python3-pip`
@@ -136,6 +136,8 @@ It is necessary to have an access to **SSH** on the focused routers, as well as 
 
 ## Installation
 It is necessary that  pip3 is installled to be able to  recover the information in the **requirements.txt** file.
+
+If you use a version of ** python greater than 3.6 ** you must use the version of ** netmiko == 2.4.2 **
 
 _(Exemple sur Ubuntu20.04)_
 
