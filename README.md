@@ -94,6 +94,7 @@ Voir la table ARP du routeur sélectionné:
 ![Screenshot](images/arp.PNG)
 
 ## Problème d'utilisation
+Si vous avez un problème avec le script vous pouvez déposer un message [ici](https://github.com/rouki69/P6.OPC/issues) si jamais vous avez un soucis d'utilisation avec le script.
 
 ## Contact
 
