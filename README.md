@@ -9,7 +9,7 @@ _(Pour Openclassroom Projet 6)_
 
 ## Description
 
-J'ai créé ce script en python pour pouvoir **automatiser certaines tâches avec des routeurs en connexion SSH**.
+J'ai créé ce script en python pour pouvoir **automatiser certaines tâches avec des routeurs qui disposent d'une connexion SSH**.
 
 Les configuration Cisco de votre appareil seront enregistrées dans un dossier avec le nom d'hôte, la date et l'heure. Vous avez la possibilité de tout importer à partir d'un fichier CSV ou de lui donner manuellement l'adresse IP, le nom d'utilisateur et le mot de passe secret de chaque hôte. 
 
@@ -20,14 +20,14 @@ Voici les possibilités avec ce script:
 * Connaître la version d'IOS utilisée. 
 * See the ARP table.
 * Ajouter un utilisateur sur le routeur.
-* Changer le mot de passe secret (le mot de passe changé sera le "secret" et non le "enable". Il sera stocké sous forme de hashage MD5).
+* Changer le mot de passe secret (le mot de passe changé sera le "secret" et non le "enable". Il sera stocké sous forme de hashage MD5 dans le routeur).
 
 
 ## Pré-requis
 Il est nécessaire d'avoir un accès **SSH** sur les routeurs ciblés, ainsi que d'**un utilisateur** sur chaque routeur.
 
 ## Installation
-Il est nécessaire d'avoir **pip3** installé et **python** pour pouvoir récuperer les informations dans le fichier **requirements.txt**
+Il est nécessaire d'avoir **python** installé et **pip3** pour pouvoir récuperer les informations dans le fichier **requirements.txt**
 Si vous utiliser une version de **python supérieur à 3.6** il faut utiliser la version de **netmiko==2.4.2**
 _(Exemple sur Ubuntu20.04)_
 
