@@ -19,7 +19,7 @@ Voici les possibilités avec ce script:
 * Voir les adresses IP des interfaces.
 * Connaître la version d'IOS utilisée. 
 * See the ARP table.
-* Add a user on the router.
+* Ajouter un utilisateur sur le routeur.
 * Changer le mot de passe secret (le mot de passe changé sera le "secret" et non le "enable". Il sera stocké sous forme de hashage MD5).
 
 
@@ -127,7 +127,7 @@ Here are the possibilities with this script:
 * See the IP addresses of the interfaces.
 * Know the IOS version that is used. 
 * See the ARP table.
-* Ajouter un utilisateur sur le routeur.
+* Add a user on the router.
 * Change the secret password (the changed password will be the "secret", not the "enable".It will be stored in the form of the MD5 hash).
 
 
