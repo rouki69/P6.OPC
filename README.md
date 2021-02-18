@@ -49,7 +49,7 @@ Pour le back-up manuel, il vous sera demandé le nombre d'appareils que vous sou
 
 Dans l'invite de commande, il suffit d'exécuter le "script-python.py"
 
-Exemple avec Ubuntu : $ python3 run.py 
+Exemple avec Ubuntu : $ python3 script-python.py 
 
 ![Screenshot](images/Demarrage.PNG)
 
@@ -159,7 +159,7 @@ For the manual back-ups, the number of devices you want to select will be asked.
 
 In the command prompt, you just have to execute the "script-python.py".
 
-Example with Ubuntu : $ python3 run.py 
+Example with Ubuntu : $ python3 script-python.py 
 
 ![Screenshot](images/Demarrage.PNG)
 
