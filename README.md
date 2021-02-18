@@ -1,5 +1,5 @@
 # __Script Python automatisation pour routeur cisco__
-# Explications en français (If you want the explanation in english click [here](https://github.com/rouki69/P6.OPC#explanation-in-english) !
+# Explications en français (If you want the explanation in english click [here](https://github.com/rouki69/P6.OPC#explanation-in-english) !)
 _(Pour Openclassroom Projet 6)_
 
 ![Python 3.8](https://img.shields.io/badge/Python-3.8-blue) ![test](https://img.shields.io/badge/tests-100%25-brightgreen)
