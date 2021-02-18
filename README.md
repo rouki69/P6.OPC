@@ -18,7 +18,7 @@ Voici les possibilités avec ce script:
 * Changer la passerelle d'un routeur.
 * Voir les adresses IP des interfaces.
 * Connaître la version d'IOS utilisée. 
-* See the ARP table.
+* Voir la table ARP.
 * Ajouter un utilisateur sur le routeur.
 * Changer le mot de passe secret (le mot de passe changé sera le "secret" et non le "enable". Il sera stocké sous forme de hashage MD5 dans le routeur).
 
