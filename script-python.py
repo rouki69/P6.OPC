@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 # Importer tous les objets important
 import getpass
 import os
@@ -14,18 +17,16 @@ if not os.path.exists('Backup-Configs'):
 now = datetime.now()
 dt_string = now.strftime("%d-%m-%Y_%H-%M")
 
-#La banière utilisée
+
 def banner():
     welcome = """\033[92m
 ======================================================
 ======================================================
+========== SCRIPT PYTHON POUR CISCO===================
+==============POUR OPENCLASSROOM======================  
+==================Projet 6============================
 ======================================================
-============SCRIPT PYTHON POUR CISCO==================
-=============Projet 6 Openclassroom===================
 ======================================================
-======================================================  
-======================================================
-
 
  \033[0m"""
     return welcome
@@ -49,7 +50,8 @@ def get_connection():
     except:
         # Message d'erreur si la connection est impossible avec l'appareil
         print(f"\nImpossible de se connecter à {device['host']}. Vérifier que les identifiants saisis sont valides.")
-
+    return menu()
+			
 
 # Les informations necessaire pour se connecter
 def get_manuel_config():
@@ -88,7 +90,7 @@ def get_saved_config(host, username, password, enable_secret):
             # Message d'erreur si la connection est impossible avec l'appareil
     except:
         print(f"\nImpossible de se connecter à {device['host']}. Vérifier que les identifiants saisis sont valides.")
-        exit()
+    return menu()
     # Recuperation de la configuration actuelle
     output = net_connect.send_command("show running-config")
     # Recuperation du nom de l'appareil.
@@ -123,7 +125,7 @@ def change_gateway():
     new_gateway = input()
     net_connect.send_config_set("ip default-gateway {0} ".format(new_gateway))
     result = net_connect.send_command("show ip default-gateway")
-    print(f"La nouvelle passerelle par défaut est: {result}")
+    print(f"\nLa nouvelle passerelle par défaut est: {result}")
     net_connect.send_command("wr")
     net_connect.disconnect()
 
@@ -167,7 +169,7 @@ def add_user():
     username = input("\nChoisissez un nom d'utilisateur: ")
     if username in result:
         print("\nL'utilisateur existe déjà veuillez réessayer")
-        exit()
+        return menu()
     else:
         password = getpass.getpass("Choisissez un mot de passe: ")
         print(f"\nCréation de l'utilisateur {username}...")
@@ -181,8 +183,7 @@ def add_user():
     net_connect.disconnect()
 
 
-#Permet le changement de mot de passe
-def change_enable_password():
+def chance_enable_password():
     net_connect = get_connection()
     net_connect.config_mode()
     password = getpass.getpass("\nChoisissez un nouveau mot de passe secret: ")
@@ -191,14 +192,15 @@ def change_enable_password():
     net_connect.send_command("wr")
     net_connect.disconnect()
     
-#Menu pour faire les choix en boucle
+    
+#Menu avec boucle pour qu'a chaque action le script revienne sur le menu
 def menu():
     
     USER_CHOICE ="""
 1. Backup en rentrant vous même les IP.
 2. Backup en recuperant les informations par le fichier CSV.
 3. Changer la passerelle d'un routeur.
-4. Faire un show route d'un routeur
+4. Faire un show route d'un routeur.
 5. Récuperer les IP des interfaces.
 6. Connaitre la version d'IOS.
 7. Voir la table ARP.
@@ -208,8 +210,7 @@ def menu():
 
 Merci de choisir une option: """
 
-
-#Les différents choix disponibles
+#Les différents choix
     choice = input(USER_CHOICE)
 
     while True:
@@ -236,14 +237,14 @@ Merci de choisir une option: """
         elif choice == "8":
             add_user()
         elif choice == "9":
-            change_enable_password()
+            chance_enable_password()
         elif choice == "0":
-            sys.exit("Merci d'avoir utilisé le script. À bientôt.")
+            sys.exit("\nMerci d'avoir utilisé le script. À bientôt.")
         else:
-            print("Merci de choisir une commande valide")
+            print("\nMerci de choisir une commande valide.")
         choice = input(USER_CHOICE)
 
-#afficher la bannière
+
 if __name__ == "__main__":
 
     print(banner() + """\033[96m """)
