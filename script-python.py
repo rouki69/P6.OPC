@@ -14,16 +14,18 @@ if not os.path.exists('Backup-Configs'):
 now = datetime.now()
 dt_string = now.strftime("%d-%m-%Y_%H-%M")
 
-
+#La banière utilisée
 def banner():
     welcome = """\033[92m
 ======================================================
 ======================================================
 ======================================================
-========== SCRIPT PYTHON POUR CISCO===================
-======================================================	
+============SCRIPT PYTHON POUR CISCO==================
+=============Projet 6 Openclassroom===================
 ======================================================
+======================================================  
 ======================================================
+
 
  \033[0m"""
     return welcome
@@ -47,7 +49,6 @@ def get_connection():
     except:
         # Message d'erreur si la connection est impossible avec l'appareil
         print(f"\nImpossible de se connecter à {device['host']}. Vérifier que les identifiants saisis sont valides.")
-        exit()
 
 
 # Les informations necessaire pour se connecter
@@ -180,7 +181,8 @@ def add_user():
     net_connect.disconnect()
 
 
-def chance_enable_password():
+#Permet le changement de mot de passe
+def change_enable_password():
     net_connect = get_connection()
     net_connect.config_mode()
     password = getpass.getpass("\nChoisissez un nouveau mot de passe secret: ")
@@ -188,49 +190,61 @@ def chance_enable_password():
     print("\nLe nouveau mot de passe secret est ajouté")
     net_connect.send_command("wr")
     net_connect.disconnect()
+    
+#Menu pour faire les choix en boucle
+def menu():
+    
+    USER_CHOICE ="""
+1. Backup en rentrant vous même les IP.
+2. Backup en recuperant les informations par le fichier CSV.
+3. Changer la passerelle d'un routeur.
+4. Faire un show route d'un routeur
+5. Récuperer les IP des interfaces.
+6. Connaitre la version d'IOS.
+7. Voir la table ARP.
+8. Ajouter un utilisateur.
+9. Changer le mot de passe secret.
+0. Quitter le script.
+
+Merci de choisir une option: """
 
 
-print(banner() + """\033[96m """)
-# Demander a l utilisateur les options qu ils souhaitent
-print("\n1. Backup en rentrant vous même les IP.")
-print("2. Backup en recuperant les informations par le fichier CSV.")
-print("3. Changer la passerelle d'un routeur.")
-print("4. Faire un show route d'un routeur")
-print("5. Récuperer les IP des interfaces.")
-print("6. Connaitre la version d'IOS.")
-print("7. Voir la table ARP.")
-print("8. Ajouter un utilisateur")
-print("9. Changer le mot de passe secret")
-print("0. Quitter le script.")
+#Les différents choix disponibles
+    choice = input(USER_CHOICE)
 
-# Pour lancer les differentes options.
-choice = input("\nMerci de choisir une option: ")
+    while True:
+        if choice == "1":
+            # Combien d'appareil l'utilisateur veut selectionner.
+            how_many = input("\nCombien d'appareil voulez vous selectionner: ")
+            how_many = int(how_many)
+            i = how_many
+            while i >= 1:
+                get_manuel_config()
+                i -= 1
+        elif choice == "2":
+            csv_option()
+        elif choice == "3":
+            change_gateway()
+        elif choice == "4":
+            show_route()
+        elif choice == "5":
+            show_int_ip()
+        elif choice == "6":
+            get_version()
+        elif choice == "7":
+            show_arp()
+        elif choice == "8":
+            add_user()
+        elif choice == "9":
+            change_enable_password()
+        elif choice == "0":
+            sys.exit("Merci d'avoir utilisé le script. À bientôt.")
+        else:
+            print("Merci de choisir une commande valide")
+        choice = input(USER_CHOICE)
 
-if choice == "1":
-    # Combien d'appareil l'utilisateur veut selectionner.
-    how_many = input("\nCombien d'appareil voulez vous selectionner: ")
-    how_many = int(how_many)
-    i = how_many
-    while i >= 1:
-        get_manuel_config()
-        i = i - 1
-elif choice == "2":
-    csv_option()
-elif choice == "3":
-    change_gateway()
-elif choice == "4":
-    show_route()
-elif choice == "5":
-    show_int_ip()
-elif choice == "6":
-    get_version()
-elif choice == "7":
-    show_arp()
-elif choice == "8":
-    add_user()
-elif choice == "9":
-    chance_enable_password()
-elif choice == "0":
-    sys.exit("\nMerci d'avoir utilisé le script au revoir\n")
-else:
-    sys.exit("\n --Merci de séléctionner une option valide--\n")
+#afficher la bannière
+if __name__ == "__main__":
+
+    print(banner() + """\033[96m """)
+    menu()
