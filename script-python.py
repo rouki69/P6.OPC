@@ -17,7 +17,7 @@ if not os.path.exists('Backup-Configs'):
 now = datetime.now()
 dt_string = now.strftime("%d-%m-%Y_%H-%M")
 
-
+#Bannière 
 def banner():
     welcome = """\033[92m
 ======================================================
@@ -90,7 +90,8 @@ def get_saved_config(host, username, password, enable_secret):
             # Message d'erreur si la connection est impossible avec l'appareil
     except:
         print(f"\nImpossible de se connecter à {device['host']}. Vérifier que les identifiants saisis sont valides.")
-    return menu()
+        exit()
+        
     # Recuperation de la configuration actuelle
     output = net_connect.send_command("show running-config")
     # Recuperation du nom de l'appareil.
@@ -116,7 +117,6 @@ def csv_option():
         while rows >= 2:
             rows = rows - 1
             get_saved_config(list_of_rows[rows][0], list_of_rows[rows][1], list_of_rows[rows][2], list_of_rows[rows][3])
-
 
 # Changer la passerelle par défaut
 def change_gateway():
